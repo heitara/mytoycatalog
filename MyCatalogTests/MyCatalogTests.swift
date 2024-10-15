@@ -10,14 +10,16 @@ import Testing
 @testable import MyCatalog
 
 
-@Test("Price conversion to BGN")
+@Test("Integer price conversion to BGN")
 func convertIntToBGN() async throws {
     let aHundred = 100
     #expect(aHundred.toBGN == "100 лв.", "Unable to convert to BGN.")
 }
 
-enum FileError: Error {
-    case missingFile
+@Test("Double price conversion to BGN")
+func convertDoubleToBGN() async throws {
+    let aHundredPointTen = 100.10
+    #expect(aHundredPointTen.toBGN == "100.10 лв.", "Unable to convert to BGN.")
 }
 
 struct MyCatalogTests {

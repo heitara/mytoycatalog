@@ -13,20 +13,9 @@ extension Int {
     }
 }
 
-struct Item {
-    let name: String
-    let price: Double
-    let description: String
-}
-
-extension Item: Decodable {
-    
-}
-
-extension Item {
-    static func parse(data jsonData: Data) throws -> [Item] {
-        let decoder = JSONDecoder()
-        let items = try decoder.decode([Item].self, from: jsonData)
-        return items
+extension Double {
+    var toBGN: String {
+        String(format: "%.2f лв.", self)
     }
 }
+

@@ -25,6 +25,7 @@
       }
     },
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:MyCatalog.xcodeproj",
         "identifier" : "9E168C262CBE46E6002D4AC2",
