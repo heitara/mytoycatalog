@@ -27,6 +27,7 @@
 		9E168C0D2CBE46E2002D4AC2 /* MyCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E168C1D2CBE46E6002D4AC2 /* MyCatalogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCatalogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E168C272CBE46E6002D4AC2 /* MyCatalogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCatalogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAB5E142CBE4C4600229CE8 /* MyCatalog.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyCatalog.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		9E168C042CBE46E2002D4AC2 = {
 			isa = PBXGroup;
 			children = (
+				9EAB5E142CBE4C4600229CE8 /* MyCatalog.xctestplan */,
 				9E168C0F2CBE46E2002D4AC2 /* MyCatalog */,
 				9E168C202CBE46E6002D4AC2 /* MyCatalogTests */,
 				9E168C2A2CBE46E6002D4AC2 /* MyCatalogUITests */,
@@ -321,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -378,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

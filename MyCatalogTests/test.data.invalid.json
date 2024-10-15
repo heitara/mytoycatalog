@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Spider-Man Action Figure",
+        description: "A highly detailed Spider-Man action figure with articulated limbs and web accessories.",
+        "price": 19.99
+    },
+    {
+        "name": "Iron Man 12-Inch Figure",
+        "description": "A 12-inch Iron Man figure featuring light-up eyes and sounds, perfect for display or play.",
+        "price": 34.99
+    },
+    {
+        "name": "Captain America Shield",
+        "description": "A replica of Captain America's iconic shield, made from high-quality plastic, great for cosplay.",
+        "price": 49.99
+    },
+    {
+        "name": "Thor's Hammer Mjolnir",
+        "description": "A detailed replica of Thor's Hammer Mjolnir, featuring realistic sounds and lights.",
+        "price": 39.99
+    },
+    {
+        "name": "Avengers Assemble Playset",
+        "description": "A comprehensive Avengers playset that includes mini-figures and vehicles for imaginative play.",
+        "price": 59.99
+    }
+]
+
