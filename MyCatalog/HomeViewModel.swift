@@ -13,11 +13,15 @@ class HomeViewModel: ObservableObject {
     
     func load() async {
         guard let fileURL = Bundle.main.url(forResource: "toys.data", withExtension: "json") else {
-            throw FileError.missingFile
+            return
+        }
+        guard let jsonData = try? Data(contentsOf: fileURL) else {
+            return
         }
         // Read the data from the file
-        let jsonData = try Data(contentsOf: fileURL)
-        // Here, you can parse the JSON data
-        let items = try Item.parse(data: jsonData)
+        let items = try? Item.parse(data: jsonData)
+        if let items {
+            self.items = items
+        }
     }
 }

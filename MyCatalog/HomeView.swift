@@ -11,22 +11,40 @@ struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
     
     var body: some View {
-        VStack {
-//            ForEach(viewModel.items) { item in
-//                ToyView(toy: item)
-//            }
+        NavigationStack {
+            List {
+                ForEach(viewModel.items) { item in
+                    NavigationLink(value: item) {
+                        ToyView(toy: item)
+                    }
+                }
+            }
+            .navigationDestination(for: Item.self) { toy in
+                    DetailsView(toy: toy)
+                    .navigationTitle(toy.name.firstWord ?? "")
+            }
+            
         }
-        .padding()
+        .task {
+            await viewModel.load()
+        }
     }
 }
 
-struct ToyView {
+struct ToyView: View {
     var toy: Item
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text(toy.name)
-            Text("Price: ") + Text(toy.price.toBGN)
+                .font(.title)
+            Group {
+                Text("Price: ") + Text(toy.price.toBGN)
+            }
+            .font(.subheadline)
+            .foregroundStyle(Color.gray)
+                
+            Text(toy.description)
         }
         .padding()
     }
@@ -34,4 +52,8 @@ struct ToyView {
 
 #Preview {
     HomeView()
+}
+
+#Preview("Toy View") {
+    ToyView(toy: Item.mock)
 }

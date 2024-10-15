@@ -19,3 +19,9 @@ extension Double {
     }
 }
 
+extension String {
+    var firstWord: String? {
+        // Split the string by whitespace and return the first element
+        return self.split(separator: " ").first.map(String.init)
+    }
+}
