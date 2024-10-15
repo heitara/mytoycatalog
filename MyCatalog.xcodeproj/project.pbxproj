@@ -46,6 +46,11 @@
 			path = MyCatalogUITests;
 			sourceTree = "<group>";
 		};
+		9E4BD3CE2CBE9BBC00BD128F /* ci_scripts */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ci_scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +81,7 @@
 		9E168C042CBE46E2002D4AC2 = {
 			isa = PBXGroup;
 			children = (
+				9E4BD3CE2CBE9BBC00BD128F /* ci_scripts */,
 				9EAB5E142CBE4C4600229CE8 /* MyCatalog.xctestplan */,
 				9E168C0F2CBE46E2002D4AC2 /* MyCatalog */,
 				9E168C202CBE46E6002D4AC2 /* MyCatalogTests */,
@@ -111,6 +117,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9E168C0F2CBE46E2002D4AC2 /* MyCatalog */,
+				9E4BD3CE2CBE9BBC00BD128F /* ci_scripts */,
 			);
 			name = MyCatalog;
 			packageProductDependencies = (
