@@ -95,8 +95,8 @@ func firstWordWithArguments(inputData: (String, String?)) {
 }
 
 // Use it for better naming
-//extension Age: @retroactive CustomTestStringConvertible {
-//    public var testDescription: String {
-//        "Age is less than \(self.age)"
-//    }
-//}
+extension Age: @retroactive CustomTestStringConvertible {
+    public var testDescription: String {
+        "Age is less than \(self.age)"
+    }
+}
